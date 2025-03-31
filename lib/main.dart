@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
-import 'screens/login_page.dart'; // LoginPage ইম্পোর্ট করলাম
+import 'screens/login_page.dart'; 
 
 void main() async {
-  // Supabase ইনিশিয়ালাইজেশন
+  
   await Supabase.initialize(
     url: 'https://ekxjcshjigfwrcdkarby.supabase.co',
     anonKey:
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const LoginPage(), // অ্যাপের শুরু হবে LoginPage দিয়ে
+      home: const LoginPage(), 
     );
   }
 }
