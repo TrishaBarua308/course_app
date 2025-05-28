@@ -19,7 +19,7 @@ class CourseDetailsPage extends StatelessWidget {
     required this.description,
   }) : super(key: key);
 
-  // URL লঞ্চ ফাংশন
+ 
   Future<void> _launchURL(String url) async {
     Uri uri = Uri.parse(url);
     if (await canLaunchUrl(uri)) {
